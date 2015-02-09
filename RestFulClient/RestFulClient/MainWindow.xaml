@@ -1,0 +1,34 @@
+﻿<Window x:Class="RestFulClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Automobile RESTFul" Height="350" Width="830" WindowStartupLocation="CenterScreen"
+        
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Width="100" Height="35" HorizontalAlignment="Left" Margin="10" Click="getBtn_Click" >Get Data</Button>
+            <Button Width="100" Height="35" HorizontalAlignment="Left" Margin="10" Click="postBtn_Click" >Post Data</Button>
+            <StackPanel Margin="10">
+                <TextBlock>Marca</TextBlock>
+                <TextBox Width="150" Height="30" Name="edtMarca" ToolTip="Mercedes, Audi, Fiat" >Mercedes</TextBox>
+            </StackPanel>
+            <StackPanel Margin="10">
+                <TextBlock>Modello</TextBlock>
+                <TextBox Width="150" Height="30" Name="edtModello" ToolTip="C220, Quattro, Punto">C220</TextBox>
+            </StackPanel>
+
+            <Button Width="100" Height="35" HorizontalAlignment="Left" Margin="10" Click="updateBtn_Click">Update</Button>
+            <Button Width="100" Height="35" HorizontalAlignment="Left" Margin="10" Click="deleteBtn_Click">Delete</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1"  Orientation="Horizontal">
+            <DataGrid Name="dgDati" Width="300" SelectedCellsChanged="dgDati_SelectedCellsChanged"></DataGrid>
+            <Image Name="imgFoto"></Image>
+        </StackPanel>
+
+    </Grid>
+</Window>

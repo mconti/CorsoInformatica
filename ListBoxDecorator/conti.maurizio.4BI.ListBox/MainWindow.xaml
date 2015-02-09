@@ -1,0 +1,10 @@
+﻿<Window x:Class="conti.maurizio._4BI.ListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ListBox Decorator" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <ListBox ItemsSource="{Binding}"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
