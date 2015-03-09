@@ -41,6 +41,16 @@ namespace conti.maurizio.GoogleMapsMVC.Controllers
                                    InfoWindowContent = @"<h2>Andalucia</h2>",
                                    population = 8370975
                                },
+                           new RegionInfo
+                               {
+                                   Latitude =  44.02965,
+                                   Longitude = 12.46530,
+                                   Title = "Casa Mia3",
+                                   zIndex = 15,
+                                   ImagePath = "Andalucia.jpg",
+                                   InfoWindowContent = @"<h2>Andalucia</h2>",
+                                   population = 8370975
+                               },
                        };
         }
     }
