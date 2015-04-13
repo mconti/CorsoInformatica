@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="conti.maurizio.GeoLocation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:conti.maurizio.GeoLocation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    
+    Loaded="Page_Loaded"
+    >
+
+    <StackPanel>
+        <ListView>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40" Width="170"  Text="Lat: "></TextBlock>
+                <TextBlock FontSize="40" Width="170"  Text="Long: "></TextBlock>
+            </StackPanel>
+        </ListView>
+        
+        <ListView ItemsSource="{Binding}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="40" Width="170" Text="{Binding Coordinate.Latitude}"></TextBlock>
+                        <TextBlock FontSize="40" Width="170" Text="{Binding Coordinate.Longitude}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackPanel>
+</Page>
