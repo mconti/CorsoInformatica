@@ -1,0 +1,15 @@
+﻿<Window x:Class="conti.maurizio.RSSFeed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Background="Azure">
+                <Button Click="ApriGiornale_click" Margin="5" Height="30">Apri</Button>
+                <Button Click="ApriArticolo_click" Margin="5" Height="30">Apri</Button>
+            </StackPanel>
+            <DataGrid Name="dgElenco"></DataGrid>
+        </StackPanel>
+        
+    </Grid>
+</Window>
