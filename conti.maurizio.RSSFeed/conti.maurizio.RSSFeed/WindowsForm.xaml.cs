@@ -15,22 +15,13 @@ using System.Windows.Shapes;
 namespace conti.maurizio.RSSFeed
 {
     /// <summary>
-    /// Logica di interazione per Monitor.xaml
+    /// Logica di interazione per WindowsForm.xaml
     /// </summary>
-    public partial class Monitor : Window
+    public partial class WindowsForm : Window
     {
-        public Feed Articolo { get; set; }
-
-        public Monitor()
+        public WindowsForm()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            browser.NavigateToString(System.Net.WebUtility.HtmlDecode(Articolo.Descrizione));
-
-            //browser.NavigateToString(Articolo.Descrizione);
         }
     }
 }
