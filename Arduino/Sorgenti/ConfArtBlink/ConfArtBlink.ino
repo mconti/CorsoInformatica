@@ -1,3 +1,4 @@
+// 16 Giugno 2015 - FabLab Romagna
 
 #include <IRremote.h>
 #include <Adafruit_NeoPixel.h>
