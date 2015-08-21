@@ -26,6 +26,14 @@ namespace Step1
         public MainWindow()
         {
             InitializeComponent();
+
+            Persona p1 = new Persona();
+            
+            // Sollevano Exception
+            //p1.Data = 1000;
+            //p1.setData(1000);
+
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,6 +41,7 @@ namespace Step1
             try
             {
                 StreamReader rd = new StreamReader("Persone.csv");
+                Persona p;     
 
                 string line = rd.ReadLine();
                 while ( !rd.EndOfStream )
@@ -40,8 +49,8 @@ namespace Step1
                     line = rd.ReadLine();
                     string[] campi = line.Split(new char[] { ';', ',', '.' });
 
-                    Persona p = new Persona { ID = Convert.ToInt32(campi[0]), Nome = campi[1] };
-                    persone.Add(p);
+                    // p = new Persona { ID = Convert.ToInt32(campi[0]), Nome = campi[1] };
+                    persone.Add(new Persona { ID = Convert.ToInt32(campi[0]), Nome = campi[1] });
 
                 }
 
@@ -54,5 +63,43 @@ namespace Step1
     {
         public int ID { get; set; }
         public string Nome { get; set; }
+
+        // Field data
+        private int _data;
+        
+        // Property appoggiata al field data
+        public int Data
+        {
+            get 
+            { 
+                return _data; 
+            }
+
+            set 
+            {
+                if (value > 100)
+                    throw new Exception("EhEHEH!!!!");
+
+                _data = value; 
+            }
+        }
+
+        public int getData()
+        {
+            return _data;
+        }
+
+        public void setData( int val )
+        {
+            if (val > 100)
+                throw new Exception("EhEHEH!!!!");
+
+            _data = val; 
+        }
+
+        public int GetDataPlus()
+        {
+            return _data+1;
+        }
     }
 }

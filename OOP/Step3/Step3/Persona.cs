@@ -9,10 +9,14 @@ namespace Step3
 {
     class Persona
     {
+        public Persona()
+        { }
+
         public int ID { get; set; }
         public string Nome { get; set; }
 
-        public virtual double Reddito {
+        public virtual double Reddito 
+        {
             get { return 0; }
         }
     }
@@ -57,7 +61,7 @@ namespace Step3
         public Persone(string NomeFile)
             : this()
         {
-            StreamReader rd = new StreamReader("Persone.csv");
+            StreamReader rd = new StreamReader(NomeFile);
 
             string line = rd.ReadLine();
             while (!rd.EndOfStream)

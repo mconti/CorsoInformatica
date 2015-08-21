@@ -25,7 +25,7 @@ namespace Step2
         // Se la classe che andiamo a modellare invece ci sembra sempre di più vicino al concetto di "è un", allora l'ereditarietà è lo strumneto più giusto da usare.
         //
 
-        public List<Persona> Elementi { get; private set; }
+        public List<Persona> Elementi { get; private set;}
 
         public Persone()
         {
@@ -35,7 +35,7 @@ namespace Step2
         public Persone(string NomeFile)
             : this()
         {
-            StreamReader rd = new StreamReader("Persone.csv");
+            StreamReader rd = new StreamReader(NomeFile);
 
             string line = rd.ReadLine();
             while (!rd.EndOfStream)
@@ -47,6 +47,12 @@ namespace Step2
                 Elementi.Add(p);
 
             }
+        }
+
+        public Persone(int d) 
+            : this("Persone.csv")
+        { 
+        
         }
 
     }
