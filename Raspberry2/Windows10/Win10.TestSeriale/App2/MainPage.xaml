@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="Win10TestSeriale.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win10TestSeriale"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <RelativePanel>
+            
+            <ListView Name="elencoSeriali" MinHeight="100" Margin="10" Background="Beige"
+                      SelectionChanged="elencoSeriali_SelectionChanged"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding miniId}"></TextBlock>
+                            <TextBlock Text="{Binding Name}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <ListView Name="elencoAttributi" MinHeight="100" Margin="10" Background="Beige"
+                      RelativePanel.RightOf="elencoSeriali"
+                      RelativePanel.AlignVerticalCenterWith="elencoSeriali"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding PortName}"></TextBlock>
+                            <TextBlock Text="{Binding Parity}"></TextBlock>
+                            <TextBlock Text="{Binding StopBits}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Name="blueButton" Height="100" Width="100" Margin="10" Background="Blue" 
+                    RelativePanel.Below="elencoSeriali"
+                    Click="blueButton_Click"
+                    />
+
+            <Button Name="greenButton" Height="100" Width="100" Margin="10" Background="Green" 
+                    RelativePanel.RightOf="blueButton"
+                    RelativePanel.AlignVerticalCenterWith="blueButton"
+                    Click="greenButton_Click"
+                    />
+
+            <TextBox Name="edtMessaggio" Margin="10" FontSize="14"
+                       RelativePanel.Below="blueButton"
+                       RelativePanel.AlignLeftWith="blueButton"
+                       RelativePanel.AlignRightWith="greenButton"
+                       />
+
+            <TextBlock Name="txtRisposta" MinHeight="100" TextWrapping="Wrap"
+                RelativePanel.Below="edtMessaggio"
+                RelativePanel.AlignLeftWith="blueButton"
+                RelativePanel.AlignRightWith="greenButton" 
+                />
+        </RelativePanel>
+        
+    </Grid>
+</Page>
