@@ -1,0 +1,19 @@
+﻿<Window x:Class="conti.maurizio._4i.Primo2015.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:conti.maurizio._4i.Primo2015"
+        mc:Ignorable="d"
+        Title="Primo 2015" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    
+    
+    <StackPanel>
+        <Button Background="Beige" Click="Button_Click" FontSize="30" Margin="10" >Hello World!!</Button>
+        <ListBox Name="lstElenco" Height="300" Background="Aqua" Margin="10"></ListBox>
+        <TextBlock Width="300" Margin="10">Ciao</TextBlock>
+        <TextBox Width="300" Margin="10">Ciao</TextBox>
+    </StackPanel>
+    
+    
+</Window>
