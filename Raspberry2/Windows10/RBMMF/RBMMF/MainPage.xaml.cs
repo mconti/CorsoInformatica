@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using Windows.Media.Capture;
 using System.Collections.Generic;
 
+using Newtonsoft.Json;
+
 // Il modello di elemento per la pagina vuota è documentato all'indirizzo http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
 
 namespace RBMMF
@@ -59,7 +61,7 @@ namespace RBMMF
                 lblValue0.Text = analogVal0.Value.ToString();
 
                 //analogVal.Value = GrovePi.TemperatureAndHumiditySensor(Pin.AnalogPin2, Model.OnePointTwo).TemperatureInCelcius();
-                Task.Delay(200).Wait();
+                Task.Delay(400).Wait();
             }
             catch (Exception)
             {
@@ -73,7 +75,7 @@ namespace RBMMF
                 lblValue1.Text = analogVal1.Value.ToString();
 
                 //analogVal.Value = GrovePi.TemperatureAndHumiditySensor(Pin.AnalogPin2, Model.OnePointTwo).TemperatureInCelcius();
-                Task.Delay(200).Wait();
+                Task.Delay(400).Wait();
             }
             catch (Exception)
             {
@@ -86,7 +88,7 @@ namespace RBMMF
                 analogVal2.Value = GrovePi.LightSensor(Pin.AnalogPin2).SensorValue();
                 lblValue2.Text = analogVal2.Value.ToString();
                 //analogVal.Value = GrovePi.TemperatureAndHumiditySensor(Pin.AnalogPin2, Model.OnePointTwo).TemperatureInCelcius();
-                Task.Delay(200).Wait();
+                Task.Delay(400).Wait();
             }
             catch (Exception)
             {
@@ -101,13 +103,28 @@ namespace RBMMF
             //    GrovePi.Relay(Pin.DigitalPin2).ChangeState(SensorStatus.Off);
             //}
 
+            try
+            {
+                Campione c = new Campione { Temperatura = analogVal0.Value, Luminosita = analogVal1.Value, Rumore = analogVal2.Value };
+                string s = "Test";
 
+                // Genera una eccezione!
+                //s = JsonConvert.SerializeObject(c);
 
-            pubnub.Publish<string>(
-                "Canale1", "temperatura: " + analogVal2.Value, false,
-                DisplayReturnMessage,
-                DisplayErrorMessage
-            );
+                pubnub.Publish<string>(
+                    "Canale1",
+                    s,
+                    false,
+                    DisplayReturnMessage,
+                    DisplayErrorMessage
+                );
+            }
+            catch (Exception Err)
+            {
+            }
+
+            //string s = @"{""eon"": { ""Temperatura"": " + analogVal0.Value + @", ""Luminosita"": " + analogVal2.Value + @",""Rumore"": " + analogVal2.Value + "} }";
+
 
             // Rifacciamo un altro giro
             timer.Start();
@@ -300,5 +317,13 @@ namespace RBMMF
             pubnub.DetailedHistory("Canale1", 10, MyHistory, MyHistoryError);
 
         }
+    }
+
+
+    public class Campione
+    {
+        public double Temperatura { get; set; }
+        public double Luminosita { get; set; }
+        public double Rumore { get; set; }
     }
 }
