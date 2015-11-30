@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="conti.maurizio.IoT.ht16k33.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:conti.maurizio.IoT.ht16k33"
+    RequestedTheme="Dark">
+
+</Application>
