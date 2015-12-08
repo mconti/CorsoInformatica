@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+
+    <script type="text/javascript" src="http://pubnub.github.io/eon/v/eon/0.0.9/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://pubnub.github.io/eon/v/eon/0.0.9/eon.css" />
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        var pubnub = PUBNUB.init({
+            publish_key: 'pub-c-65914541-3bbd-4fa9-979d-ffe4b018be8f',
+            subscribe_key: 'sub-c-12fa7c6c-8534-11e5-83e3-02ee2ddab7fe'
+        });
+        var channel = "Canale1";
+      eon.chart({
+        channel: channel,
+        history: false,
+        flow: true,
+        pubnub: pubnub,
+        debug: true,
+        rate: 1000,
+        generate: {
+          bindto: '#chart',
+          data: {
+            type: 'spline',
+            labels: true
+          }
+        }
+      });
+    </script>
+
+    <!--<script>
+      setInterval(function(){
+        pubnub.publish({
+          channel: channel,
+          message: {
+            eon: {
+              'San Francisco': Math.floor(Math.random() * 99),
+              'Portland': Math.floor(Math.random() * 99)
+            }
+          }
+        });
+      }, 1000);
+      setInterval(function(){
+        pubnub.publish({
+          channel: channel,
+          message: {
+            eon: {
+              'Austin': Math.floor(Math.random() * 99),
+              'New York': Math.floor(Math.random() * 99)
+            }
+          }
+        });
+      }, 1000);
+    </script>-->
+</body>
+</html>
