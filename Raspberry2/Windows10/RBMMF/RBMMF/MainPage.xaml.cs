@@ -109,7 +109,7 @@ namespace RBMMF
                 string s = "Test";
 
                 // Genera una eccezione!
-                //s = JsonConvert.SerializeObject(c);
+                s = JsonConvert.SerializeObject(c);
 
                 pubnub.Publish<string>(
                     "Canale1",

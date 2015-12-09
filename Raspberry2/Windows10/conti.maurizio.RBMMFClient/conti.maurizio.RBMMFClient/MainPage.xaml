@@ -18,26 +18,11 @@
         <ListView Grid.Column="0" Name="lvData" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="100"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <TextBlock Grid.Column="0" Grid.Row="0" Text="Temperatura" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Grid.Column="0" Grid.Row="1" Text="Luminosita" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Grid.Column="0" Grid.Row="2" Text="Rumore" Style="{StaticResource BaseTextBlockStyle}"/>
-
-                        <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Temperatura}" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Luminosita}" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Rumore}" Style="{StaticResource BaseTextBlockStyle}"/>
-                    </Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="100" Text="{Binding strTemperatura}" Style="{StaticResource BaseTextBlockStyle}" />
+                        <TextBlock Width="100" Text="{Binding Luminosita}" Style="{StaticResource BaseTextBlockStyle}" />
+                        <TextBlock Width="100" Text="{Binding Rumore}" Style="{StaticResource BaseTextBlockStyle}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

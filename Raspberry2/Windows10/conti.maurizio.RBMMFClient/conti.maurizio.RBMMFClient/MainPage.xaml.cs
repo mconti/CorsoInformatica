@@ -39,14 +39,55 @@ namespace conti.maurizio.RBMMFClient
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Campioni = new ObservableCollection<Campione>();
-            Campioni.Add(new Campione { Luminosita = 100, Rumore = 0, Temperatura = 10.3 });
             lvData.ItemsSource = Campioni;
+            pubnub.Subscribe<string>("Canale1", userCallBack, connectCallback, errorCallback);
+        }
 
-            pubnub.Subscribe<string>(
+        private void connectCallback(string obj)
+        {
+            //Dispatcher.RunAsync(
+            //    CoreDispatcherPriority.Normal,
+            //    () =>
+            //    {
+            //        lvLog.Dispatcher.RunAsync(
+            //            CoreDispatcherPriority.Normal,
+            //            () => lvLog.Items.Add("Connesso: " + obj));
+            //    }
+            //);
+        }
 
-                // Canale
-                "Canale1",
+        private void errorCallback(PubnubClientError obj)
+        {
+            //Dispatcher.RunAsync(
+            //    CoreDispatcherPriority.Normal,
+            //    () =>
+            //    {
+            //        lvLog.Dispatcher.RunAsync(
+            //            CoreDispatcherPriority.Normal,
+            //            () => lvLog.Items.Add("Erore: " + obj.Message));
+            //    }
+            //);
+        }
 
+        private void userCallBack(string obj)
+        {
+            try
+            {
+                Dispatcher.RunAsync(
+                    CoreDispatcherPriority.Normal,
+                    () =>
+                    {
+                        List<object> deserializedMessage = pubnub.JsonPluggableLibrary.DeserializeToListOfObject(obj);
+                        Campione campione = JsonConvert.DeserializeObject<Campione>(deserializedMessage[0].ToString());
+                        Campioni.Add(campione);
+                    }
+                );
+            }
+            catch { }
+        }
+    }
+
+    /*
                 // Event Handler user
                 async (string obj) =>
                     await Dispatcher.RunAsync(
@@ -72,13 +113,14 @@ namespace conti.maurizio.RBMMFClient
                         CoreDispatcherPriority.Normal,
                         () => lvLog.Items.Add("Erore: " + obj.Message)
                     )
-            );
-        }
-    }
+
+    */
+
 
     public class Campione
     {
         public double Temperatura { get; set; }
+        public string strTemperatura { get { return "T: " + Temperatura + "°"; } }
         public double Luminosita { get; set; }
         public double Rumore { get; set; }
     }
