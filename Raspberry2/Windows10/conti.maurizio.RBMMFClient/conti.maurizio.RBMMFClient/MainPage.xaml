@@ -24,7 +24,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Width="100" Text="{Binding strTemperatura}" Style="{StaticResource BaseTextBlockStyle}" />
+                        <TextBlock Width="100" Text="{Binding Temperatura}" Style="{StaticResource BaseTextBlockStyle}" />
                         <TextBlock Width="100" Text="{Binding Luminosita}" Style="{StaticResource BaseTextBlockStyle}" />
                         <TextBlock Width="100" Text="{Binding Rumore}" Style="{StaticResource BaseTextBlockStyle}"/>
                     </StackPanel>

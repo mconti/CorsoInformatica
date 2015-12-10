@@ -78,8 +78,8 @@ namespace conti.maurizio.RBMMFClient
                     () =>
                     {
                         List<object> deserializedMessage = pubnub.JsonPluggableLibrary.DeserializeToListOfObject(obj);
-                        Campione campione = JsonConvert.DeserializeObject<Campione>(deserializedMessage[0].ToString());
-                        Campioni.Add(campione);
+                        EON eon = JsonConvert.DeserializeObject<EON>(deserializedMessage[0].ToString());
+                        Campioni.Add(eon.eon);
                     }
                 );
             }
@@ -90,8 +90,11 @@ namespace conti.maurizio.RBMMFClient
         {
             pubnub.EnableJsonEncodingForPublish = true;
 
-            string msg = @"{""Austin"": 29}";
-            pubnub.Publish("Canale1", msg, userPublish, userPubError);
+            EON e1 = new EON();
+            Campione c = new Campione { Luminosita = 100, Rumore = 50, Temperatura = 25 };
+            e1.eon = c;
+
+            pubnub.Publish("Canale1", e1, userPublish, userPubError);
         }
 
         private void userPublish(object obj)
@@ -136,8 +139,12 @@ namespace conti.maurizio.RBMMFClient
     public class Campione
     {
         public double Temperatura { get; set; }
-        public string strTemperatura { get { return "T: " + Temperatura + "°"; } }
         public double Luminosita { get; set; }
         public double Rumore { get; set; }
+    }
+
+    public class EON
+    {
+        public Campione eon { get; set; }
     }
 }
