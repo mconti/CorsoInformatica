@@ -10,12 +10,17 @@
     >
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
-        <ListView Grid.Column="0" Name="lvData" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30">
+        <Button Grid.Row="0" Click="Button_Click">Go</Button>
+        <ListView Grid.Row="1" Grid.Column="0" Name="lvData" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -27,6 +32,6 @@
             </ListView.ItemTemplate>
         </ListView>
         
-        <ListView Grid.Column="1" Name="lvLog" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30"></ListView>
+        <ListView Grid.Row="1" Grid.Column="1" Name="lvLog" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30"></ListView>
     </Grid>
 </Page>

@@ -85,6 +85,22 @@ namespace conti.maurizio.RBMMFClient
             }
             catch { }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            pubnub.EnableJsonEncodingForPublish = true;
+
+            string msg = @"{""Austin"": 29}";
+            pubnub.Publish("Canale1", msg, userPublish, userPubError);
+        }
+
+        private void userPublish(object obj)
+        {
+        }
+
+        private void userPubError(PubnubClientError obj)
+        {
+        }
     }
 
     /*
