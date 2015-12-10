@@ -69,11 +69,12 @@ namespace conti.maurizio.RBMMFClient
             //);
         }
 
-        private void userCallBack(string obj)
+        private async void userCallBack(string obj)
         {
             try
             {
-                Dispatcher.RunAsync(
+
+                await Dispatcher.RunAsync(
                     CoreDispatcherPriority.Normal,
                     () =>
                     {
@@ -90,8 +91,13 @@ namespace conti.maurizio.RBMMFClient
         {
             pubnub.EnableJsonEncodingForPublish = true;
 
+            int temperatura, luminosita, rumore;
+            int.TryParse(edtTemperatura.Text, out temperatura);
+            int.TryParse(edtLuminosita.Text, out luminosita);
+            int.TryParse(edtRumore.Text, out rumore);
+
             EON e1 = new EON();
-            Campione c = new Campione { Luminosita = 100, Rumore = 50, Temperatura = 25 };
+            Campione c = new Campione { Luminosita = luminosita, Rumore = rumore, Temperatura = temperatura };
             e1.eon = c;
 
             pubnub.Publish("Canale1", e1, userPublish, userPubError);

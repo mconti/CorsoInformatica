@@ -11,27 +11,43 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Click="Button_Click">Go</Button>
+
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Orientation="Horizontal">
+            <Button VerticalAlignment="Stretch" Width="100" Margin="5" Click="Button_Click">Publish</Button>
+            <RelativePanel Margin="10" Width="100">
+                <TextBlock Name="lblTemperatura">Temperatura</TextBlock>
+                <TextBox Name="edtTemperatura" RelativePanel.Below="lblTemperatura" HorizontalAlignment="Stretch" Text="25"></TextBox>
+            </RelativePanel>
+            <RelativePanel Margin="10" Width="100">
+                <TextBlock Name="lblLuminosità">Luminosità</TextBlock>
+                <TextBox Name="edtLuminosita" RelativePanel.Below="lblLuminosità" HorizontalAlignment="Stretch" Text="45"></TextBox>
+            </RelativePanel>
+            <RelativePanel Margin="10" Width="100">
+                <TextBlock Name="lblRumore">Rumore</TextBlock>
+                <TextBox Name="edtRumore" RelativePanel.Below="lblRumore" HorizontalAlignment="Stretch" Text="15"></TextBox>
+            </RelativePanel>
+        </StackPanel>
+        
         <ListView Grid.Row="1" Grid.Column="0" Name="lvData" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Width="100" Text="{Binding Temperatura}" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Width="100" Text="{Binding Luminosita}" Style="{StaticResource BaseTextBlockStyle}" />
-                        <TextBlock Width="100" Text="{Binding Rumore}" Style="{StaticResource BaseTextBlockStyle}"/>
+                        <TextBlock Width="50" Text="{Binding Temperatura}" Style="{StaticResource BaseTextBlockStyle}" />
+                        <TextBlock Width="50" Text="{Binding Luminosita}" Style="{StaticResource BaseTextBlockStyle}" />
+                        <TextBlock Width="50" Text="{Binding Rumore}" Style="{StaticResource BaseTextBlockStyle}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
-        <ListView Grid.Row="1" Grid.Column="1" Name="lvLog" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="30"></ListView>
+
+        <WebView Grid.Row="1" Grid.Column="1" Source="https://freeboard.io/board/rGme96"></WebView>
     </Grid>
 </Page>
