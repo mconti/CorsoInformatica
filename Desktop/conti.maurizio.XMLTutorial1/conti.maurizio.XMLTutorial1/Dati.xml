@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Libri>
+    <Libro Titolo="Harry Potter" Autore="J. K. Rowling">FotoHP.jpg</Libro>
+    <Libro Titolo="Star Wars" Autore="George Lucas">FotoSW.jpg</Libro>
+  </Libri>
+</root>
