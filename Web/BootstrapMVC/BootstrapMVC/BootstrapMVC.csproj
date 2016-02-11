@@ -110,6 +110,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="TemiBootstrap\janux\css\bootstrap-responsive.css" />
     <Content Include="TemiBootstrap\janux\css\bootstrap-responsive.min.css" />
@@ -253,157 +256,446 @@
     <Content Include="TemiBootstrap\janux\js\jquery.uploadify-3.1.min.js" />
     <Content Include="TemiBootstrap\janux\js\modernizr.js" />
     <Content Include="TemiBootstrap\janux\js\retina.js" />
-    <Content Include="TemiBootstrap\videopage\css\animate.css" />
-    <Content Include="TemiBootstrap\videopage\css\bootstrap.min.css" />
-    <Content Include="TemiBootstrap\videopage\css\custom.css" />
-    <Content Include="TemiBootstrap\videopage\css\flexslider.css" />
-    <Content Include="TemiBootstrap\videopage\css\font-awesome.css" />
-    <Content Include="TemiBootstrap\videopage\css\font-awesome.min.css" />
-    <Content Include="TemiBootstrap\videopage\css\hover-min.css" />
-    <Content Include="TemiBootstrap\videopage\css\hover.css" />
-    <Content Include="TemiBootstrap\videopage\css\jquery.bxslider.css" />
-    <Content Include="TemiBootstrap\videopage\css\jquery.fancybox.css" />
-    <Content Include="TemiBootstrap\videopage\css\onepage-scroll.css" />
-    <Content Include="TemiBootstrap\videopage\css\owl.carousel.css" />
-    <Content Include="TemiBootstrap\videopage\css\owl.theme.css" />
-    <Content Include="TemiBootstrap\videopage\css\prettyPhoto.css" />
-    <Content Include="TemiBootstrap\videopage\css\red.css" />
-    <Content Include="TemiBootstrap\videopage\css\responsive.css" />
-    <Content Include="TemiBootstrap\videopage\css\style.css" />
-    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.svg" />
-    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="TemiBootstrap\videopage\images\about\browse.png" />
-    <Content Include="TemiBootstrap\videopage\images\about\graphics.png" />
-    <Content Include="TemiBootstrap\videopage\images\about\web1.png" />
-    <Content Include="TemiBootstrap\videopage\images\back-top.png" />
-    <Content Include="TemiBootstrap\videopage\images\banner\banner.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\banner\l5.png" />
-    <Content Include="TemiBootstrap\videopage\images\banner\overaly.png" />
-    <Content Include="TemiBootstrap\videopage\images\banner\p10.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\banner\p3.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\banner\p5.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\banner\v-overlay.png" />
-    <Content Include="TemiBootstrap\videopage\images\bg\1.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg\2.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg\3.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg\4.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg\5.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg\6.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\bg_play_pause.png" />
-    <Content Include="TemiBootstrap\videopage\images\blank.gif" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic1.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic10.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic11.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic12.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic2.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic3.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic4.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic5.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic6.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic7.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic8.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\blog\pic9.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client1.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client2.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client3.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client4.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client5.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client6.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client7.png" />
-    <Content Include="TemiBootstrap\videopage\images\clients\client8.png" />
-    <Content Include="TemiBootstrap\videopage\images\color01.png" />
-    <Content Include="TemiBootstrap\videopage\images\controls.png" />
-    <Content Include="TemiBootstrap\videopage\images\fancybox_loading%402x.gif" />
-    <Content Include="TemiBootstrap\videopage\images\fancybox_loading.gif" />
-    <Content Include="TemiBootstrap\videopage\images\fancybox_overlay.png" />
-    <Content Include="TemiBootstrap\videopage\images\fancybox_sprite%402x.png" />
-    <Content Include="TemiBootstrap\videopage\images\fancybox_sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\glyphicons-halflings-white.png" />
-    <Content Include="TemiBootstrap\videopage\images\glyphicons-halflings.png" />
-    <Content Include="TemiBootstrap\videopage\images\logo2.png" />
-    <Content Include="TemiBootstrap\videopage\images\logo3.png" />
-    <Content Include="TemiBootstrap\videopage\images\LogoAziende\ConfartCesena.png" />
-    <Content Include="TemiBootstrap\videopage\images\LogoAziende\RotaryCesena.png" />
-    <Content Include="TemiBootstrap\videopage\images\logoFLR.png" />
-    <Content Include="TemiBootstrap\videopage\images\map1.png" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p1.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p2.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p3.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p4.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p5.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p6.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\portfolio\p7.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\btnNext.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\btnPrevious.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\contentPattern.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\btnNext.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\btnPrevious.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\contentPattern.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\default_thumbnail.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\default_thumb.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_next.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_prev.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_x.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_y.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\btnNext.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\btnPrevious.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternBottom.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternLeft.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternRight.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternTop.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\default_thumbnail.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\btnNext.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\btnPrevious.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\btnNext.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\btnPrevious.png" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\default_thumbnail.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\loader.gif" />
-    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\sprite.png" />
-    <Content Include="TemiBootstrap\videopage\images\slider\b6.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\slider\s1.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\slider\s2.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\slider\s3.jpg" />
+    <Content Include="TemiBootstrap\videopage\css\animate.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\custom.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\flexslider.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\font-awesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\font-awesome.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\hover-min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\hover.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\jquery.bxslider.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\jquery.fancybox.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\onepage-scroll.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\owl.carousel.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\owl.theme.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\prettyPhoto.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\red.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\responsive.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\css\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\about\browse.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\about\graphics.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\about\web1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\back-top.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\l5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\overaly.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\p10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\p3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\p5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\banner\v-overlay.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg\6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\bg_play_pause.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blank.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic11.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic12.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\blog\pic9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\clients\client8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\color01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\controls.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\fancybox_loading%402x.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\fancybox_loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\fancybox_overlay.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\fancybox_sprite%402x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\fancybox_sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\glyphicons-halflings-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\glyphicons-halflings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\logo2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\logo3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\LogoAziende\ConfartCesena.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\LogoAziende\RotaryCesena.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\logoFLR.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\map1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\portfolio\p7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\btnNext.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\btnPrevious.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\contentPattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\default_thumbnail.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_rounded\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\btnNext.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\btnPrevious.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\contentPattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\default_thumbnail.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\dark_square\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\default_thumb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_next.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_prev.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\default\sprite_y.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\btnNext.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\btnPrevious.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternBottom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternLeft.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternRight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\contentPatternTop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\default_thumbnail.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\facebook\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\btnNext.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\btnPrevious.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\default_thumbnail.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_rounded\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\btnNext.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\btnPrevious.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\default_thumbnail.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\prettyPhoto\light_square\sprite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\slider\b6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\slider\s1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\slider\s2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\images\slider\s3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TemiBootstrap\videopage\images\team\pic1.jpg" />
     <Content Include="TemiBootstrap\videopage\images\team\pic2.jpg" />
     <Content Include="TemiBootstrap\videopage\images\team\pic3.jpg" />
     <Content Include="TemiBootstrap\videopage\images\team\pic4.jpg" />
     <Content Include="TemiBootstrap\videopage\images\team\pic5.jpg" />
     <Content Include="TemiBootstrap\videopage\images\team\pic6.jpg" />
-    <Content Include="TemiBootstrap\videopage\images\testimonial2.png" />
-    <Content Include="TemiBootstrap\videopage\js\bootstrap.js" />
-    <Content Include="TemiBootstrap\videopage\js\bootstrap.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\custom.js" />
-    <Content Include="TemiBootstrap\videopage\js\gmaps.js" />
-    <Content Include="TemiBootstrap\videopage\js\isotope.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.bxslider.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.bxslider.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.counterup.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.easing.1.3.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.fancybox.pack.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.isotope.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.prettyPhoto.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.scrollTo.js" />
-    <Content Include="TemiBootstrap\videopage\js\jquery.singlePageNav.js" />
-    <Content Include="TemiBootstrap\videopage\js\owl.carousel.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\smooth-scroll.js" />
+    <Content Include="TemiBootstrap\videopage\images\testimonial2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\custom.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\gmaps.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\isotope.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.bxslider.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.bxslider.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.counterup.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.easing.1.3.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.fancybox.pack.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.isotope.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.prettyPhoto.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.scrollTo.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\jquery.singlePageNav.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\owl.carousel.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\smooth-scroll.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TemiBootstrap\videopage\js\vendor\jquery-1.10.2.min.js" />
     <Content Include="TemiBootstrap\videopage\js\vendor\modernizr-2.6.2.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\waypoints.min.js" />
-    <Content Include="TemiBootstrap\videopage\js\wow.min.js" />
-    <Content Include="TemiBootstrap\videopage\videos\gdrive.mp4" />
+    <Content Include="TemiBootstrap\videopage\js\waypoints.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\js\wow.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\videos\gdrive.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\videos\logo2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -424,15 +716,33 @@
     <Content Include="TemiBootstrap\janux\font\glyphiconshalflings-regular.eot" />
     <Content Include="TemiBootstrap\janux\font\glyphiconshalflings-regular.ttf" />
     <Content Include="TemiBootstrap\janux\font\glyphiconshalflings-regular.woff" />
-    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.eot" />
-    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.ttf" />
-    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.woff" />
-    <Content Include="TemiBootstrap\videopage\fonts\FontAwesome.otf" />
-    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="TemiBootstrap\videopage\videos\gdrive.ogg" />
-    <Content Include="TemiBootstrap\videopage\videos\gdrive.webm" />
+    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\videos\gdrive.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TemiBootstrap\videopage\videos\gdrive.webm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Shared\_CyprassVideoPage.cshtml" />
     <Content Include="Views\Shared\_Janux.cshtml" />
     <Content Include="Views\Home\Calendar.cshtml" />
@@ -450,6 +760,20 @@
     <Content Include="Views\Home\Typography.cshtml" />
     <Content Include="Views\Home\Ui.cshtml" />
     <Content Include="Views\Home\Widgets.cshtml" />
+    <Content Include="fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\flr - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\flr - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
