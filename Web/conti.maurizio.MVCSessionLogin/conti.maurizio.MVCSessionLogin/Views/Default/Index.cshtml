@@ -1,0 +1,16 @@
+﻿@using conti.maurizio.MVCSessionLogin.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    Utente u = Session["Utente"] as Utente;
+    if (u != null)
+    {
+        <div>Bentornato @u.Email </div>
+    }
+}
+
+
+
