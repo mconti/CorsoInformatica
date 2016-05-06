@@ -32,6 +32,7 @@ namespace conti.maurizio.XMLTutorial1
             {
 
                 XElement dati = XElement.Load("Dati.xml");
+                Console.WriteLine(dati);
 
                 // Tutti gli elementi contentuti in root
                 // Che siano "Libri" oppure no

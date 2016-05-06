@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,12 @@ namespace conti.maurizio.WPFRssFeed
         public static int id { get; set; }
         public string Titolo { get; set; }
         public BitmapImage Immagine { get; set; }
+        public string MioCampo { get; set; }
 
         public Item(XElement item)
         {
             id++;
+            MioCampo = "Ciao";
 
             try { Titolo = item.Element("title").Value; } catch { }
 
@@ -29,7 +32,7 @@ namespace conti.maurizio.WPFRssFeed
         }
     }
 
-    public class Items : List<Item>
+    public class Items : ObservableCollection<Item>
     {
         public int id { get; set; }
         public string Url { get; set; }
@@ -41,7 +44,7 @@ namespace conti.maurizio.WPFRssFeed
 
             foreach( XElement elemento in e.Element("channel").Elements("item") )
             {
-                Add(new Item(elemento));
+                this.Add(new Item(elemento));
             }
         }
     }

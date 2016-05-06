@@ -89,31 +89,31 @@ namespace RestFulClient
 
         private async void AggiornaUI()
         {
-            // Per utilizzare HttpClient è necessario installare il pacchetto NuGet    Microsoft.AspNet.WebApi.Client
+            // Per utilizzare HttpClient è necessario installare 
+            // il pacchetto NuGet Microsoft.AspNet.WebApi.Client
             try
             {
-                using (var client = new HttpClient())
-                {
-                    // baseAddress è l'URL della WebAPI
-                    client.BaseAddress = new Uri(baseAddress);
+                var client = new HttpClient();
+                // baseAddress è l'URL della WebAPI
+                client.BaseAddress = new Uri(baseAddress);
                     
-                    // Volendo prelevare i valori in formato XML, si lavora sugli header HTTP
-                    //  client.DefaultRequestHeaders.Accept.Clear();
-                    //  client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                // Volendo prelevare i valori in formato XML, si lavora sugli header HTTP
+                //  client.DefaultRequestHeaders.Accept.Clear();
+                //  client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    // Preleva il json dalla rete
-                    // HTTP GET è il verbo per leggere uno o più record (è la 'R' del CRUD)
+                // Preleva il json dalla rete
+                // HTTP GET è il verbo per leggere uno o più record (è la 'R' del CRUD)
 
-                    // Ottiene la stringa json... ma è meglio utilizzare GetAsync che ritorna lo stream leggibile con ReadAsAsync<>
-                    //string jsonString = await client.GetStringAsync("/api/auto");
+                // Ottiene la stringa json... ma è meglio utilizzare GetAsync che ritorna lo stream leggibile con ReadAsAsync<>
+                //string jsonString = await client.GetStringAsync("/api/auto");
+                
+                HttpResponseMessage res = await client.GetAsync("/api/auto");
+                if (res.IsSuccessStatusCode)
+                {
+                    // converte i dati json in una List<Auto>
+                    //dgDati.ItemsSource = JsonConvert.DeserializeObject<List<Auto>>(jsonString);
+                    dgDati.ItemsSource = await res.Content.ReadAsAsync<List<Auto>>();
 
-                    HttpResponseMessage res = await client.GetAsync("/api/auto");
-                    if (res.IsSuccessStatusCode)
-                    {
-                        // converte i dati json in una List<Auto>
-                        //dgDati.ItemsSource = JsonConvert.DeserializeObject<List<Auto>>(jsonString);
-                        dgDati.ItemsSource = await res.Content.ReadAsAsync<List<Auto>>();
-                    }
                 }
             }
             catch (Exception err) { MessageBox.Show(err.Message); }
