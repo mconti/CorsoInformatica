@@ -111,7 +111,10 @@ namespace RestFulClient
                 if (res.IsSuccessStatusCode)
                 {
                     // converte i dati json in una List<Auto>
-                    //dgDati.ItemsSource = JsonConvert.DeserializeObject<List<Auto>>(jsonString);
+                    // dgDati.ItemsSource = JsonConvert.DeserializeObject<List<Auto>>(jsonString);
+
+                    // Nota: Per accedere ai metodi di estensione tipo ReadAsAsync della classe 
+                    // HttpResponseMessage è necessario includere il pacchetto NuGet Microsoft.AspNet.WebApi.Client
                     dgDati.ItemsSource = await res.Content.ReadAsAsync<List<Auto>>();
 
                 }
