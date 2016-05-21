@@ -18,7 +18,7 @@
 decode_results results;
 
 #define LED_PIN 7
-#define NUMPIXEL 3
+#define NUMPIXELS 3
 
 IRrecv irrecv( RX_PIN );
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
