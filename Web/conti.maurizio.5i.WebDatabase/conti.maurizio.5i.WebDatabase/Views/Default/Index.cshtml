@@ -1,0 +1,18 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Model.Rows.Count
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    @foreach (DataRow row in @Model.Rows)
+    {
+    <tr><td>@row[0]</td><td>@row[1]</td></tr>
+    }
+</table>
+
