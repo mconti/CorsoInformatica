@@ -12,7 +12,7 @@ namespace conti.maurizio._5i.WebDatabase.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            DAL dal = new DAL();
+            DAL dal = new DAL("Database1.accdb");
             DataTable table = dal.Getdata("select * from auto");
             return View(table);
         }
