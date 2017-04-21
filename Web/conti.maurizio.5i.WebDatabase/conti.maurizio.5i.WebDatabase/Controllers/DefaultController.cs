@@ -12,9 +12,16 @@ namespace conti.maurizio._5i.WebDatabase.Controllers
         // GET: Default
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Query1(string Query, string SearchString2)
+        {
             DAL dal = new DAL("Database1.accdb");
-            DataTable table = dal.Getdata("select * from auto");
+            DataTable table = dal.Getdata(Query);
             return View(table);
+
+            //return View("~/Views/Default/Index.cshtml", table);
         }
     }
 }

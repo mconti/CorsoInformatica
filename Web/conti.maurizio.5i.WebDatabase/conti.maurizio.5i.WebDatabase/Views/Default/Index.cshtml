@@ -5,14 +5,16 @@
     ViewBag.Title = "Index";
 }
 
-@Model.Rows.Count
 
 <h2>Index</h2>
 
-<table class="table table-bordered">
-    @foreach (DataRow row in @Model.Rows)
-    {
-    <tr><td>@row[0]</td><td>@row[1]</td></tr>
-    }
-</table>
+@using (Html.BeginForm("Query1", "Default", FormMethod.Post))
+{
+    <p>
+        Title1: @Html.TextBox("Query", "Select * from auto") <br />
+
+        <input type="submit" value="Filter" />
+    </p>
+} 
+
 
